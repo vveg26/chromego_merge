@@ -25,58 +25,26 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - name: 油管-绵阿羊
-    type: trojan
-    server: a
-    port: 1
-    password: 72ac875a-f5b9-461e-a7a4-942b468b0d83
-    udp: true
-    sni: gw.alicdn.com
-    skip-cert-verify: true
-    
-  - name: WARP
-    type: wireguard
-    server: engage.cloudflareclient.com
-    port: 2408
-    ip: 172.16.0.2
-    ipv6: 2606:4700:110:87c0:ba32:773a:8d44:e353
-    private-key: +HpHpY/KjSv5hJdGrN2ok1A6CKhCmTQv5Unwyul9S1g=
-    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-    udp: true
-    reserved: [0,0,0]
-    remote-dns-resolve: true  
-    dns: [ 1.1.1.1, 8.8.8.8 ]
-    dialer-proxy: "WARP前置节点"
 
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
-      - 油管-绵阿羊
-      - WARP
       - 自动选择
       - 负载均衡
       - 手动选择
       - DIRECT
-  - name: WARP前置节点
-    type: select
-    proxies:
-      - 自动选择
-      - 负载均衡
-      - 手动选择
-
+      
   - name: 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 油管-绵阿羊
 
   - name: 手动选择
     type: select
     proxies:
-      - 油管-绵阿羊
 
   - name: 负载均衡
     type: load-balance #负载均衡
@@ -84,11 +52,7 @@ proxy-groups:
       - 油管-绵阿羊
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
-    #lazy: true
-    #disable-udp: true
-    strategy: round-robin #作为前置节点⽤这个⽐较好
-
-      
+    
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
