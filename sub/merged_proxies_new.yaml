@@ -147,12 +147,18 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
-- name: meta_ss_121
-  type: ss
-  server: www2.dtku49.xyz
-  port: 11105
-  password: thqfFCl0zl4Wyc0FaKxTQw==
-  cipher: 2022-blake3-aes-128-gcm
+- name: meta_hysteria_121
+  type: hysteria
+  server: 108.181.22.239
+  port: 17727
+  sni: youku.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: 7YxfKsXdTnB226S8j4OjaA9M0nLcXATvgnXhVJbCRG7e9KKU7i
+  up: 11
+  down: 55
 - name: meta_hysteria_131
   type: hysteria
   server: www.dtku50.xyz
@@ -297,7 +303,7 @@ proxy-groups:
   - meta_hysteria_91
   - meta_hysteria_101
   - meta_hysteria_111
-  - meta_ss_121
+  - meta_hysteria_121
   - meta_hysteria_131
   - meta_vless_141
   - meta_hysteria_151
@@ -328,7 +334,7 @@ proxy-groups:
   - meta_hysteria_91
   - meta_hysteria_101
   - meta_hysteria_111
-  - meta_ss_121
+  - meta_hysteria_121
   - meta_hysteria_131
   - meta_vless_141
   - meta_hysteria_151
