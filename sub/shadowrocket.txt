@@ -10,7 +10,7 @@ hysteria://hy2.dtku47.xyz:15566?peer=&auth=jQrGpwSqp34P&insecure=0&upmbps=50&dow
 hysteria://hy1.dtku47.xyz:22334?peer=&auth=lASdKzWK0VxL&insecure=0&upmbps=50&downmbps=80&alpn=h3&mport=22334&obfs=&protocol=udp&fastopen=1#hysteria_meta_9
 hysteria://hy2.dtku47.xyz:15566?peer=&auth=jQrGpwSqp34P&insecure=0&upmbps=50&downmbps=80&alpn=h3&mport=15566&obfs=&protocol=udp&fastopen=1#hysteria_meta_10
 hysteria://hy1.dtku47.xyz:22334?peer=&auth=lASdKzWK0VxL&insecure=0&upmbps=50&downmbps=80&alpn=h3&mport=22334&obfs=&protocol=udp&fastopen=1#hysteria_meta_11
-ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206dGhxZkZDbDB6bDRXeWMwRmFLeFRRdz09QHd3dzIuZHRrdTQ5Lnh5ejoxMTEwNQ==
+hysteria://108.181.22.239:17727?peer=youku.com&auth=&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=17727&obfs=&protocol=udp&fastopen=1#hysteria_meta_12
 hysteria://www.dtku50.xyz:43250?peer=bing.com&auth=&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=43250&obfs=&protocol=udp&fastopen=1#hysteria_meta_13
 vless://34f36b97-1fb7-41f3-8db4-912cc69e724a@45.150.165.61:25678?security=reality&allowInsecure0&flow=xtls-rprx-vision&type=tcp&fp=chrome&pbk=sJsSZcA2DyAHDTcoe8Utbz9JaXJPMVmtHmiXxWmcExc&sid=&sni=itunes.apple.com&serviceName=&path=&host=#vless_meta_14
 hysteria://www3.dtku49.xyz:58693?peer=bing.com&auth=&insecure=1&upmbps=50&downmbps=80&alpn=h3&mport=58693&obfs=&protocol=udp&fastopen=1#hysteria_meta_15
