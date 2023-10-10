@@ -25,14 +25,13 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - { name: '油管-绵阿羊', type: trojan, server: a, port: 1, password: 72ac875a-f5b9-461e-a7a4-942b468b0d83, udp: true, sni: gw.alicdn.com, skip-cert-verify: true }
+  - 
 proxy-groups:
   - name: 节点选择
     type: select
     proxies:
       - 自动选择
       - DIRECT
-      - 油管-绵阿羊
 
   - name: 自动选择
     type: url-test
@@ -40,7 +39,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 油管-绵阿羊
 
 rules:
   - DOMAIN,clash.razord.top,DIRECT
