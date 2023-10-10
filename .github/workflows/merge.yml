@@ -3,7 +3,8 @@ name: Merge Script
 on:
   push:
     branches:
-      - main  # 替换为你的默认分支
+      - patch-1
+default  # 替换为你的默认分支
   schedule:
     - cron: '0 0,8,18 * * *'  # 每6h一次
   workflow_dispatch:  # 触发手动事件
