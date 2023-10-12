@@ -24,6 +24,6 @@ hysteria2://4f58555f@108.181.22.155:17965?insecure=1&sni=www.bing.com#hysteria2_
 hysteria2://fc4488ef@167.160.90.252:60930?insecure=1&sni=www.bing.com#hysteria2_1
 hysteria2://ebcbb37b@www2.dtku49.xyz:54406?insecure=1&sni=www.bing.com#hysteria2_2
 hysteria2://dongtaiwang.com@www.dtku48.xyz:56411?insecure=1&sni=www.bing.com#hysteria2_3
-vless://0773256c-d020-436d-afea-6eee7cb6c872@download.yunzhongzhuan.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freegradely.xyz&serviceName=&path=/bodhws&host=xray1.freegradely.xyz#vless_0
-vless://f5c180eb-fbce-49ac-9029-482eca9385c0@download.yunzhongzhuan.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freeh1.xyz&serviceName=&path=/gzogws&host=xray1.freeh1.xyz#vless_2
+vless://0773256c-d020-436d-afea-6eee7cb6c872@dongtaiwang3.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freegradely.xyz&serviceName=&path=/bodhws&host=xray1.freegradely.xyz#vless_0
+vless://f5c180eb-fbce-49ac-9029-482eca9385c0@dongtaiwang3.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freeh1.xyz&serviceName=&path=/gzogws&host=xray1.freeh1.xyz#vless_2
 vless://f5c180eb-fbce-49ac-9029-482eca9385c0@dongtaiwang2.com:443?security=tls&allowInsecure=0&flow=&type=ws&fp=chrome&pbk=&sid=&sni=xray1.freeh1.xyz&serviceName=&path=/gzogws&host=xray1.freeh1.xyz#vless_3
