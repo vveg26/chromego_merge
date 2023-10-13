@@ -119,7 +119,7 @@ proxies:
   down: 10
 - name: meta_vless_81
   type: vless
-  server: 45.150.165.61
+  server: 45.150.165.79
   port: 25678
   udp: true
   uuid: 34f36b97-1fb7-41f3-8db4-912cc69e724a
