@@ -25,14 +25,20 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: 油管-绵阿羊
-  type: trojan
-  server: a
-  port: 1
-  password: 72ac875a-f5b9-461e-a7a4-942b468b0d83
+- name: ☁️ CFWarp-A
+  type: vless
+  server: icook.tw
+  port: 443
+  uuid: e7fb1f69-f3ed-4916-9597-1a87252a72eb
   udp: true
-  sni: gw.alicdn.com
-  skip-cert-verify: true
+  tls: true
+  network: ws
+  servername: gospeedip.onlyno999.top # priority over wss host
+  # skip-cert-verify: true
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: gospeedip.onlyno999.top
 - name: WARP
   type: wireguard
   server: engage.cloudflareclient.com
@@ -220,11 +226,9 @@ proxy-groups:
 - name: 节点选择
   type: select
   proxies:
-  - 油管-绵阿羊
   - WARP
   - 自动选择
   - 负载均衡
-  - 手动选择
   - DIRECT
 - name: WARP前置节点
   type: select
@@ -238,57 +242,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 油管-绵阿羊
-  - meta_hysteria_01
-  - meta_hysteria_11
-  - meta_hysteria_21
-  - meta_hysteria_31
-  - meta_hysteria_41
-  - meta_hysteria_51
-  - meta_hysteria_61
-  - meta_hysteria_71
-  - meta_vless_81
-  - meta_hysteria_91
-  - hysteria_0
-  - hysteria_1
-  - hysteria_2
-  - hysteria_3
-- name: 手动选择
-  type: select
-  proxies:
-  - 油管-绵阿羊
-  - meta_hysteria_01
-  - meta_hysteria_11
-  - meta_hysteria_21
-  - meta_hysteria_31
-  - meta_hysteria_41
-  - meta_hysteria_51
-  - meta_hysteria_61
-  - meta_hysteria_71
-  - meta_vless_81
-  - meta_hysteria_91
-  - hysteria_0
-  - hysteria_1
-  - hysteria_2
-  - hysteria_3
+  - ☁️ CFWarp-A
 - name: 负载均衡
   type: load-balance
   proxies:
-  - 油管-绵阿羊
-  - meta_hysteria_01
-  - meta_hysteria_11
-  - meta_hysteria_21
-  - meta_hysteria_31
-  - meta_hysteria_41
-  - meta_hysteria_51
-  - meta_hysteria_61
-  - meta_hysteria_71
-  - meta_vless_81
-  - meta_hysteria_91
-  - hysteria_0
-  - hysteria_1
-  - hysteria_2
-  - hysteria_3
+  -  ☁️ CFWarp-A
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
