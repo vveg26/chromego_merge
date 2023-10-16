@@ -25,6 +25,24 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- name: WARP
+  type: wireguard
+  server: engage.cloudflareclient.com
+  port: 2408
+  ip: 172.16.0.2
+  ipv6: 2606:4700:110:8ca6:e26c:fe01:2c27:f4ce
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  private-key: +J6PcJRTXLLxbPwxZPxCxL9URoX0svVoZRd8vDrJals=
+  udp: true
+  reserved:
+  - 0
+  - 0
+  - 0
+  remote-dns-resolve: true
+  dns:
+  - 1.1.1.1
+  - 8.8.8.8
+  dialer-proxy: 🚀 节点选择
 - name: hysteria_01
   type: hysteria
   server: 108.181.22.239
