@@ -141,7 +141,7 @@ proxy-groups:
       - hysteria_03
       - hysteria_04
       - hysteria_05
-      - hysteria_6
+      - hysteria_06
   - name: ⚖️ 负载均衡
     type: load-balance
     proxies:
