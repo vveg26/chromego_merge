@@ -36,8 +36,8 @@ proxies:
 - name: meta_hysteria2_01
   type: hysteria2
   server: 108.181.22.205
-  port: 10194
-  password: 87dc8c2e
+  port: 51443
+  password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
 - name: meta_hysteria_11
@@ -64,9 +64,9 @@ proxies:
   congestion-controller: bbr
 - name: meta_hysteria2_31
   type: hysteria2
-  server: 108.181.22.205
-  port: 10194
-  password: 87dc8c2e
+  server: 108.181.24.7
+  port: 30682
+  password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
 - name: meta_hysteria_41
@@ -82,9 +82,9 @@ proxies:
   skip-cert-verify: true
 - name: meta_hysteria2_51
   type: hysteria2
-  server: 108.181.22.205
-  port: 10194
-  password: 87dc8c2e
+  server: 108.181.24.7
+  port: 30682
+  password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
 - name: meta_hysteria_61
@@ -255,8 +255,8 @@ proxies:
 - name: hysteria2_0
   type: hysteria2
   server: 108.181.22.155
-  port: 17965
-  password: 4f58555f
+  port: 46728
+  password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
